@@ -5,10 +5,107 @@ html {
     font-weight: 400;
 }
 
+body {
+    background-color: #ecf2f8;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 *, *:before, *:after {
     box-sizing: inherit;
 }
 
-p {
+p{
     margin: 0px;
+    padding: 0px;
+}
+
+h3 {
+    padding: 0px;
+    margin-bottom: 20px;
+}
+
+/* #wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 7%, 3%;
+} */
+
+#testimony-1, #testimony-2, #testimony-3, #testimony-4, #testimony-5 {
+    border-radius: 5px;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+#testimony-1 {
+    background-color: #7541c8;
+    color: white;
+    margin-top: 10%;
+    margin-bottom: 4%;
+}
+
+#testimony-2 {
+    background-color: #48556a;
+    color: white;
+    margin-bottom: 4%;
+}
+
+#testimony-3 {
+    background-color: #ffffff;
+    color: #19212e;
+    margin-bottom: 4%;
+}
+
+#testimony-4 {
+    background-color: #19212e;
+    color: white;
+    margin-bottom: 4%;
+}
+
+#testimony-5 {
+    background-color: #ffffff;
+    color: #19212e;
+    margin-bottom: 10%;
+}
+
+#text1, #text2, #text3, #text4, #text5 {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#quote1, #quote2, #quote3, #quote4, #quote5 {
+    padding-bottom: 15px;
+    opacity: 0.7;
+}
+
+#person1, #person2, #person3, #person4, #person5 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding-left: 20px;
+}
+
+#name1, #name2, #name3, #name4, #name5 {
+    font-size: 1.2rem;
+}
+
+#title1, #title2, #title3, #title4, #title5 {
+    opacity: 0.7;
+}
+
+img {
+    border-radius: 50%;
+    margin-top: 4px;
+    margin-right: 10px;
+    border: 2px solid #cfcfcf;
+}
+
+#detail1, #detail2, #detail3, #detail4, #detail5 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 13px;
+}
+
+@media (min-width: 576px) {
+
 }
