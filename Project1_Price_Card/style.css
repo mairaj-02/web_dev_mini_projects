@@ -1,0 +1,126 @@
+html {
+    box-sizing: border-box;
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+h2, h4, p {
+    margin: 0px;
+}
+
+body {
+    padding: 100px;
+    margin-left: 100px;
+    margin-top: 100px;
+}
+
+#wrapper {
+    height: 450px;
+    width: 650px;
+    box-shadow: 0px 2px 21px -1px rgba(0,0,0,0.75);
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 20px;
+    margin-left: 300px;
+}
+
+#top-container {
+    height: 40%;
+    width: 100%;
+    padding: 20px;
+}
+
+#bottom-container {
+    height: 60%;
+    width: 100%;
+    color: white;
+}
+
+#left-container {
+    background-color: rgb(42, 178, 175);
+    padding: 20px;
+}
+
+#right-container {
+    background-color: rgb(71, 196, 194);
+    padding: 20px;
+}
+
+#right-container, #left-container {
+    height: 100%;
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#sign-up {
+    background-color: rgb(192, 223, 52);
+    color: white;
+    box-shadow: 0px 2px 21px -1px rgba(0,0,0,0.3);
+    border: none;
+    padding: 20px;
+    width: 90%;
+    border-radius: 5px;
+    margin-top: 30px;
+    font-size: 1.1rem;
+}
+
+#heading {
+    color: rgb(42, 178, 175);
+    font-size: 1.6rem;
+}
+
+#sub-heading {
+    color: rgb(192, 223, 52);
+}
+
+#text-in-top-container {
+    color: hsl(218, 22%, 67%);
+}
+
+#amount {
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+#sub-heading-in-left-container {
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+#amount, #per-month {
+    display: inline-block;
+}
+
+#per-month {
+    position: relative;
+    top: -5px;
+    font-size: 0.9rem;
+    opacity: 0.5;
+}
+
+#price-box {
+    margin-bottom: 3px;
+}
+
+ul {
+    padding: 0px;
+    list-style: none;
+    font-size: 1rem;
+    opacity: 0.8;
+}
+
+#why-us {
+    font-size: 1.2rem;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: rgb(42, 81, 24);
+    transform: scale(1.05);
+}
