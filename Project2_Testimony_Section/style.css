@@ -107,5 +107,63 @@ img {
 }
 
 @media (min-width: 576px) {
+    #wrapper {
+        display: flex;
+        flex-direction: row;
+        max-width: 1200px;
+        margin: 100px auto;
+        padding: 0 30px;
+        gap: 20px;
+        align-items: stretch;
+    }
 
+    #left-container {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 75%;
+        gap: 20px;
+    }
+
+    #right-container {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 25%;
+    }
+
+    #top-left {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    #bottom-left {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    #testimony-1 {
+        flex-basis: 65%;
+        margin: 0;
+    }
+
+    #testimony-2 {
+        flex-basis: 35%;
+        margin: 0;
+    }
+
+    #testimony-3 {
+        flex-basis: 35%;
+        margin: 0;
+    }
+
+    #testimony-4 {
+        flex-basis: 65%;
+        margin: 0;
+    }
+
+    #testimony-5 {
+        margin: 0;
+        height: 100%;
+    }
 }
