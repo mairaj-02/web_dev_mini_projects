@@ -15,50 +15,45 @@
   <link href="https://fonts.googleapis.com/css2?family=Karla:ital@0;1&display=swap" rel="stylesheet">
 
 </head>
+
+
 <body>
-  <div id = "wrapper">
-    <div id = "top-container">
-      <h2 id = "heading">Join our community</h2>
-
-      <h3 id="sub-heading">30-day, hassle-free money back guarantee</h3>
-    
-      <p id = "text-in-top-container">Gain access to our full library of tutorials along with expert code reviews. 
-        Perfect for any developers who are serious about honing their skills.</p>
+  <main class="main-container">
+    <div class="top-container">
+      <section class="community-card">
+        <h1 class="community-card__title">Join our community</h1>
+        <h2 class="community-card__guarantee">30-day, hassle-free money back guarantee</h2>
+        <p class="community-card__description">
+          Gain access to our full library of tutorials along with expert code reviews. 
+          Perfect for any developers who are serious about honing their skills.
+        </p>
+      </section>
     </div>
-    <div id = "bottom-container">
-      <div id = "left-container">
-        <h4 id = "sub-heading-in-left-container">Monthly Subscription</h4>
-
-        <div id = "price-box">
-          <div id = "amount">&dollar;29</div>
-          <div id = "per-month">per month</div>
+    
+    <div class="bottom-container">
+      <section class="subscription-card">
+        <h2 class="subscription-card__title">Monthly Subscription</h2>
+        <div class="subscription-card__price">
+          <span class="subscription-card__price--amount">$29</span>
+          <span class="subscription-card__price--time">per month</span>
         </div>
-      
-        <p id = "full-access">Full access for less than &dollar;1 a day</p>
-      
-        <button id="sign-up">Sign Up</button>
-      </div><div id = "right-container">
-        <h4 id="why-us">Why Us</h4>
-        
-        <ul>
+        <p class="subscription-card__description">Full access for less than $1 a day</p>
+        <button class="subscription-card__button">Sign Up</button>
+      </section>
+
+      <section class="why-us-card">
+        <h2 class="why-us-card__title">Why Us</h1>                            
+        <ul class="why-us-card__list">                    
           <li>Tutorials by industry experts</li>
-          <li>Peer &amp; expert code review</li>
-          <li>Coding exercises</li>
+          <li>Peer & expert code review</li>
+          <li>Code challenges</li>
           <li>Access to our GitHub repos</li>
           <li>Community forum</li>
           <li>Flashcard decks</li>
           <li>New videos every week</li>
         </ul>
-
-      </div>
+      </section>
     </div>
-  </div>
-  
-  <footer>
-    <!-- <p class="thanks-to">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a> 
-      Coded by <a href="#">MAIRAJ</a>.
-    </p> -->
-  </footer>
+  </main>
 </body>
 </html>

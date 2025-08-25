@@ -106,7 +106,7 @@ img {
     margin-top: 13px;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 750px) {
     #wrapper {
         display: flex;
         flex-direction: row;
