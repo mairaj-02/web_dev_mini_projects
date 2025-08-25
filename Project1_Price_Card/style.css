@@ -1,126 +1,180 @@
-html {
+/* global css variables */
+:root {
+    /* website colors */
+    --primary-cyan: hsl(179, 62%, 43%);
+    --primary-cyan-light: hsl(179, 62%, 47%);
+    --primary-bright-yellow: rgb(192, 223, 52);
+    --primary-dark-yellow: rgb(182, 210, 58);
+    --neutral-grayish-blue: hsl(218, 22%, 67%);
+    --neutral-light-gray: hsl(204, 43%, 93%);
+
+    /* typography */
+    --font-family: 'Karla', sans-serif;
+    --font-size-base: 16px;
+    --font-size-md: 18px;
+    --font-size-lg: 20px;
+    --font-weight-regular: 400;
+    --font-weight-bold: 700;
+    --line-height-base: 1.5;
+
+    /* spacing */
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 1.5rem;
+    --spacing-lg: 2rem;
+
+    /* border radius */
+    --border-radius: 8px;
+
+    /* box shadow */
+    --box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* global reset -- overriding the default behavior of browsers */
+*, *::before, *::after {
     box-sizing: border-box;
-    font-family: 'Karla', sans-serif;
-    font-size: 16px;
-    font-weight: 400;
+    margin: 0;
+    padding: 0;
 }
 
-*, *:before, *:after {
-    box-sizing: inherit;
-}
-
-h2, h4, p {
-    margin: 0px;
-}
-
+/* body styles */
 body {
-    padding: 100px;
-    margin-left: 100px;
-    margin-top: 100px;
+    font-family: var(--font-family);
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-regular);
+    line-height: var(--line-height-base);
+    color: var(--neutral-grayish-blue);
+    background-color: var(--neutral-light-gray);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: var(--spacing-md);
 }
 
-#wrapper {
-    height: 450px;
-    width: 650px;
-    box-shadow: 0px 2px 21px -1px rgba(0,0,0,0.75);
-    border-radius: 5px;
+
+.main-container {
+    width: 100%;
+    max-width: 650px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
     overflow: hidden;
-    margin-top: 20px;
-    margin-left: 300px;
 }
 
-#top-container {
-    height: 40%;
-    width: 100%;
-    padding: 20px;
+.top-container {
+    background-color: white;
+    padding: var(--spacing-lg);
 }
 
-#bottom-container {
-    height: 60%;
-    width: 100%;
+.community-card__title {
+    color: var(--primary-cyan);
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-bold);
+    margin-bottom: var(--spacing-sm);
+}
+
+.community-card__guarantee {
+    color: var(--primary-bright-yellow);
+    font-size: var(--font-size-md);
+    margin-bottom: var(--spacing-sm);
+}
+
+.community-card__description {
+    font-size: var(--font-size-base);
+    margin-bottom: var(--spacing-md);
+}
+
+.bottom-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.subscription-card {
+    background-color: var(--primary-cyan);
     color: white;
+    padding: var(--spacing-lg);
 }
 
-#left-container {
-    background-color: rgb(42, 178, 175);
-    padding: 20px;
+.subscription-card__title {
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-bold);
+    margin-bottom: var(--spacing-sm);
 }
 
-#right-container {
-    background-color: rgb(71, 196, 194);
-    padding: 20px;
+.subscription-card__price {
+    display: flex;
+    align-items: center;
+    margin-bottom: var(--spacing-sm);
 }
 
-#right-container, #left-container {
-    height: 100%;
-    width: 50%;
-    display: inline-block;
-    vertical-align: top;
+.subscription-card__price--amount {
+    font-size: 2rem;
+    font-weight: var(--font-weight-bold);
+    margin-right: var(--spacing-sm);
 }
 
-#sign-up {
-    background-color: rgb(192, 223, 52);
-    color: white;
-    box-shadow: 0px 2px 21px -1px rgba(0,0,0,0.3);
-    border: none;
-    padding: 20px;
-    width: 90%;
-    border-radius: 5px;
-    margin-top: 30px;
-    font-size: 1.1rem;
-}
-
-#heading {
-    color: rgb(42, 178, 175);
-    font-size: 1.6rem;
-}
-
-#sub-heading {
-    color: rgb(192, 223, 52);
-}
-
-#text-in-top-container {
-    color: hsl(218, 22%, 67%);
-}
-
-#amount {
-    font-weight: 700;
-    font-size: 1.8rem;
-}
-
-#sub-heading-in-left-container {
-    margin-bottom: 15px;
-    font-size: 1.3rem;
-}
-
-#amount, #per-month {
-    display: inline-block;
-}
-
-#per-month {
-    position: relative;
-    top: -5px;
-    font-size: 0.9rem;
-    opacity: 0.5;
-}
-
-#price-box {
-    margin-bottom: 3px;
-}
-
-ul {
-    padding: 0px;
-    list-style: none;
-    font-size: 1rem;
+.subscription-card__price--time {
+    font-size: var(--font-size-base);
+    color: var(--neutral-light-gray);
     opacity: 0.8;
 }
 
-#why-us {
-    font-size: 1.2rem;
+.subscription-card__description {
+    font-size: var(--font-size-base);
+    opacity: 0.9;
+    margin-bottom: var(--spacing-md);
 }
 
-button:hover {
+.subscription-card__button {
+    background-color: var(--primary-bright-yellow);
+    color: white;
+    width: 100%;
+    font-size: var(--font-size-md);
+    font-weight: var(--font-weight-bold);
+    padding: var(--spacing-sm);
+    border: none;
+    border-radius: var(--border-radius);
     cursor: pointer;
-    background-color: rgb(42, 81, 24);
-    transform: scale(1.05);
+    transition: background-color 0.3s ease;
+}
+
+.subscription-card__button:hover {
+    background-color: var(--primary-dark-yellow);
+    transform: scale(1.02);
+}
+
+.why-us-card {
+    background-color: var(--primary-cyan-light);
+    color: white;
+    padding: var(--spacing-lg);
+}
+
+.why-us-card__title {
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-bold);
+    margin-bottom: var(--spacing-sm);
+}
+
+.why-us-card__list {
+    font-size: var(--font-size-base);
+    opacity: 0.9;
+    line-height: var(--line-height-base);
+    list-style: none;
+    padding: 0;
+}
+
+.why-us-card__description__list li {
+    margin-bottom: var(--spacing-xs);
+}
+
+
+/* responsive design */
+@media (min-width: 768px) {
+    .bottom-container {
+        flex-direction: row;
+    }
+
+    .subscription-card, .why-us-card {
+        flex: 1;
+    }
 }
